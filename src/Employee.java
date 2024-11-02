@@ -1,11 +1,13 @@
 public class Employee {
-    public void calculateSalary()
+    String details;
+    float salaryperhour;
+    public float calculateSalary()
     {
-        System.out.println("salary");
+        return salaryperhour*8*20;
     }
-    public void getDetails()
+    public String getDetails()
     {
-        System.out.println("details");
+        return details;
     }
 
     public void performTask()

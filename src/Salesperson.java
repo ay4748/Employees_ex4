@@ -1,15 +1,23 @@
 public class Salesperson extends Employee{
-    @Override
-    public void calculateSalary()
-    {
-        System.out.println("salary Salesperson");
+    float salaryperhour;
+    String details;
+    public Salesperson(String details) {
+        this.salaryperhour = 35;
+        this.details = details;
     }
 
     @Override
-    public void getDetails()
+    public float calculateSalary()
     {
-        System.out.println("details Salesperson");
+        return 35*8*20 + 500 - 100;
     }
+
+    @Override
+    public String getDetails()
+    {
+        return "salesperson " + details;
+    }
+
     @Override
     public void performTask()
     {

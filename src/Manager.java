@@ -1,14 +1,22 @@
 public class Manager extends Employee {
-    @Override
-    public void calculateSalary()
-    {
-        System.out.println("salary manager");
+    float salaryperhour;
+    String details;
+
+    public Manager(String details) {
+        this.salaryperhour = 50;
+        this.details = details;
     }
 
     @Override
-    public void getDetails()
+    public float calculateSalary()
     {
-        System.out.println("details manager");
+        return 50*8*20 + 1000 - 100;
+    }
+
+    @Override
+    public String getDetails()
+    {
+        return "manager" + details;
     }
 
     @Override
